@@ -293,12 +293,12 @@ system42.config({
 });
 $loader.config({
   onpass: function(e) {
-    $boot.BOOTLOG.innerHTML += "\n " + e.url.split("/").pop() + " ... ready";
+    $boot.BOOTLOG.innerHTML += "\n " + e.url.split("/electron9x/").pop() + " ... ready";
   },
   onfail: function(e) {
     $boot.BOOTLOG.innerHTML +=
       '\n <span class="ui_log__red">' +
-      e.url.split("/").pop() +
+      e.url.split("/electron9x/").pop() +
       " ... fail<span>";
   }
 });
