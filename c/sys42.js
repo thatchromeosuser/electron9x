@@ -5750,7 +5750,7 @@ function(e) {
                 title: "Alert",
                 baseClass: "ui_alert",
                 msg: n,
-                img: "/c/sys/skins/w93/alert.png",
+                img: "/electron9x/c/sys/skins/w93/alert.png",
                 cb: t,
                 pinnable: !1,
                 sound: "alert",
@@ -5810,7 +5810,7 @@ function(e) {
         r($extend({
             title: "Error",
             msg: o,
-            img: "/c/sys/skins/w93/error.png",
+            img: "/electron9x/c/sys/skins/w93/error.png",
             cb: n,
             sound: "error"
         }, o))
@@ -5818,7 +5818,7 @@ function(e) {
         r($extend({
             title: "Info",
             msg: e,
-            img: n || "/c/sys/skins/w93/info.png",
+            img: n || "/electron9x/c/sys/skins/w93/info.png",
             onopen: $noop,
             sound: null
         }, e))
@@ -5868,7 +5868,7 @@ function(e) {
         r($extend({
             title: "Confirm",
             msg: e,
-            img: "/c/sys/skins/w93/question.png",
+            img: "/electron9x/c/sys/skins/w93/question.png",
             onopen: $noop,
             sound: null,
             cb: n,
@@ -5974,7 +5974,7 @@ system42("settings", function(s) {
     }, function() {
         return s._settings
     }), "string" == typeof s._settings ? s._settings = t : s._settings = Object.assign(t, s._settings), s._settings.skin = "w93", s._init.home = function() {
-        //s._path.home = "/a/", s._path.key.home = "", s._path.desktop = "/a/desktop/", s._path.key.desktop = "desktop/", s._path.skin = "/c/sys/skins/" + s._settings.skin + "/"
+        //s._path.home = "/a/", s._path.key.home = "", s._path.desktop = "/a/desktop/", s._path.key.desktop = "desktop/", s._path.skin = "/electron9x/c/sys/skins/" + s._settings.skin + "/"
 		le._user = le._settings.userData;
         le._path.home = '/a/home/'+le._settings.userData.nick + '/';
         le._path.key.home = 'home/'+le._settings.userData.nick + '/';
@@ -7134,16 +7134,16 @@ system42("exe", function(n) {
             l || $io.obj.each(r[n], function(e, i) {
                 i.replace(/(.+)\./, function(e, t) {
                     $io.arr.all(t.split("_"), function(e) {
-                        s === e && (l = "/c/sys/skins/" + le._settings.skin + "/" + n + "/" + i)
+                        s === e && (l = "/electron9x/c/sys/skins/" + le._settings.skin + "/" + n + "/" + i)
                     })
                 })
             })
         }
-        return r || (r = le._files.c.sys.skins.w93), n = (i || "").split("/"), s("ext", t), s("type", n[1]), s("mime", n[0]), l || (l = "/c/sys/skins/" + le._settings.skin + "/file.png"), l
+        return r || (r = le._files.c.sys.skins.w93), n = (i || "").split("/"), s("ext", t), s("type", n[1]), s("mime", n[0]), l || (l = "/electron9x/c/sys/skins/" + le._settings.skin + "/file.png"), l
     }
 
     function o(e) {
-        return "/" === e ? "/c/sys/skins/" + le._settings.skin + "/devices/computer.png" : "/a/" === e ? "/c/sys/skins/" + le._settings.skin + "/devices/drive-storage.gif" : "/c/" === e ? "/c/sys/skins/" + le._settings.skin + "/devices/drive-harddisk.gif" : r.utils.resolvePath(e) === le._path.home ? "/c/sys/skins/" + le._settings.skin + "/places/user-home.png" : "/c/sys/skins/" + le._settings.skin + "/places/folder.png"
+        return "/" === e ? "/electron9x/c/sys/skins/" + le._settings.skin + "/devices/computer.png" : "/a/" === e ? "/electron9x/c/sys/skins/" + le._settings.skin + "/devices/drive-storage.gif" : "/c/" === e ? "electron9x/c/sys/skins/" + le._settings.skin + "/devices/drive-harddisk.gif" : r.utils.resolvePath(e) === le._path.home ? "/electron9x/c/sys/skins/" + le._settings.skin + "/places/user-home.png" : "/electron9x/c/sys/skins/" + le._settings.skin + "/places/folder.png"
     }
     r.utils = {}, r.utils.find = function(e, t) {
         return $io.find(e, t, le._files, "/", [".", ".."])
@@ -7159,7 +7159,7 @@ system42("exe", function(n) {
             (t = t.concat("hexed", "code", "iframe")) && $io.arr.all(t, function(t) {
                 if (-1 === s.indexOf(t)) {
                     s.push(t);
-                    var e = le._apps[t].icon ? r.utils.normalizeIcon(le._apps[t].icon) : "/c/sys/skins/" + le._settings.skin + "/programs.png";
+                    var e = le._apps[t].icon ? r.utils.normalizeIcon(le._apps[t].icon) : "/electron9x/c/sys/skins/" + le._settings.skin + "/programs.png";
                     n.push({
                         name: le._apps[t].name || $io.str.capitalise(t),
                         icon: e,
@@ -7255,7 +7255,7 @@ system42("exe", function(n) {
             i = s(e, t);
         return l(0, t, i)
     }, r.utils.normalizeIcon = function(e) {
-        return 0 === e.indexOf("/") || 0 === e.indexOf("http") ? e : "/c/sys/skins/" + le._settings.skin + "/" + e
+        return 0 === e.indexOf("/") || 0 === e.indexOf("http") ? e : "/electron9x/c/sys/skins/" + le._settings.skin + "/" + e
     }, r.utils.getInfo = function(e) {
         if (r.utils.isFolder(e)) {
             var t = "";
@@ -7815,7 +7815,7 @@ system42("explorer", function(D) {
             }), e.appendChild(i), T()
         } else {
             var S = $extend({
-                icon: "/c/sys/skins/" + D._settings.skin + "/places/folder.png",
+                icon: "/electron9x/c/sys/skins/" + D._settings.skin + "/places/folder.png",
                 baseClass: "ui_explorer_window"
             }, a.window, {
                 title: o,
@@ -7833,7 +7833,7 @@ system42("explorer", function(D) {
                     a.nav && l.removeEventListener("click", p, !1), a.nav && c.removeEventListener("click", y, !1), a.nav && u.removeEventListener("click", g, !1), x && x.removeEventListener("keypress", $, !1), a.onclose.call(this, e, d.value), j.current = W[0], W[I.id] = null
                 }
             });
-            a.nav && (S.afterMenu = (r.className = "flex ui_explorer__nav" + (a.nav ? "" : " hide"), l.innerHTML = "<", l.className = "skin_outset ui_explorer__nav__prev", c.innerHTML = '<img src="/c/sys/skins/w93/16/home.png">', c.className = "skin_outset ui_explorer__nav__home", s.innerHTML = ">", s.className = "skin_outset ui_explorer__nav__next", u.innerHTML = "Go", u.className = "skin_outset ui_explorer__nav__go", x.type = "text", x.value = o, x.className = "ui_explorer__nav__input flex__fluid", r.appendChild(l), r.appendChild(c), r.appendChild(x), r.appendChild(u), l.addEventListener("click", p, !1), u.addEventListener("click", g, !1), c.addEventListener("click", y, !1), x.addEventListener("keypress", $, !1), r), v.classList.add("ui_explorer--nav")), a.footer && (S.footer = function() {
+            a.nav && (S.afterMenu = (r.className = "flex ui_explorer__nav" + (a.nav ? "" : " hide"), l.innerHTML = "<", l.className = "skin_outset ui_explorer__nav__prev", c.innerHTML = '<img src="/electron9x/c/sys/skins/w93/16/home.png">', c.className = "skin_outset ui_explorer__nav__home", s.innerHTML = ">", s.className = "skin_outset ui_explorer__nav__next", u.innerHTML = "Go", u.className = "skin_outset ui_explorer__nav__go", x.type = "text", x.value = o, x.className = "ui_explorer__nav__input flex__fluid", r.appendChild(l), r.appendChild(c), r.appendChild(x), r.appendChild(u), l.addEventListener("click", p, !1), u.addEventListener("click", g, !1), c.addEventListener("click", y, !1), x.addEventListener("keypress", $, !1), r), v.classList.add("ui_explorer--nav")), a.footer && (S.footer = function() {
                 if (d.type = "text", d.className = "ui_explorer__selected_file" + (a.footer ? "" : " hide"), d.value = o, d.readOnly = !0, a.save) {
                     var e = document.createElement("label");
                     L = document.createElement("input"), E = document.createElement("select"), L.type = "text", e.textContent = "Name: ";
