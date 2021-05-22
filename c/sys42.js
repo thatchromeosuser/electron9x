@@ -5963,7 +5963,7 @@ system42("boot", function(o, s) {
 system42("bios", function(o) {
     "use strict";
     le.debug = true;
-    $boot.BOOTLOG.innerHTML += "\nWindows93 v" + $boot.VERSION + " booting on...\nZIAD87 LOCAL93\n", $boot.BOOTLOG.innerHTML += "\n" + platform.description, $boot.BOOTLOG.innerHTML += "\n"
+    $boot.BOOTLOG.innerHTML += "\nWindows93 v" + $boot.VERSION + " booting on...\nZIAD87 LOCAL93\n", $boot.BOOTLOG.innerHTML += "\n" + "...?", $boot.BOOTLOG.innerHTML += "\n"
 });
 //os/boot/settings.js
 system42("settings", function(s) {
