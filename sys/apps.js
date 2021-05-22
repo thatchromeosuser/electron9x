@@ -52,7 +52,7 @@ system42("apps", function(le) {
                 document.body.className = "noscroll animate zoomOut";
                 $audio("/c/files/sounds/shutdown.mp3").play();
                 setTimeout(function() {
-                    document.body.innerHTML = "<div style='display: table;width: 100%;height: " + window.innerHeight + "px;text-align:center;'><p style='display:table-cell;vertical-align:middle;'>SHUTTING DOWN...</p></div>";
+                    document.body.innerHTML = "<div style="display: table;width: 100%;height: &quot; + window.innerHeight + &quot;px;text-align:center;"><img width="16" src="c/sys/skins/w93/16/start.png" height="16"><p style="vertical-align:middle;">It is now safe to shutdown :)</p></div>";
                     document.body.style.color = "#C3FF00";
                     document.body.className = "noscroll animate zoomIn";
                 }, 1000);
