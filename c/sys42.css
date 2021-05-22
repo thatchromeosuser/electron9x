@@ -522,7 +522,7 @@ td,th{
     height:auto
 }
 .ui_menu .ui_menu__item{
-    color:#000;
+    color:white;
     margin:0;
     padding:3px;
     cursor:pointer;
