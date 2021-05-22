@@ -2522,7 +2522,7 @@ system42("apps", function(le) {
             icon: "apps/inception.png",
             exec: function() {
                 $window({
-                    url: "http://v1.windows93.net/",
+                    url: "https://v1.windows93.net/",
                     title: "VIRTUAL PC",
                     icon: "",
                     width: 600,
