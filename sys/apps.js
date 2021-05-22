@@ -2017,7 +2017,7 @@ system42("apps", function(le) {
             hide: true,
             exec: function(opt) {
                 $window.call(this, {
-                    url: "/electron9x/c/programs/acidBox93/index.html",
+                    url: "c/programs/acidBox93/index.html",
                     width: 600,
                     height: 400,
                     resizable: false,
@@ -2035,7 +2035,7 @@ system42("apps", function(le) {
             hide: true,
             exec: function(opt) {
                 $window.call(this, {
-                    url: "/electron9x/c/programs/starwars/index.html",
+                    url: "c/programs/starwars/index.html",
                     width: 429,
                     height: 177,
                     help: "Star Wars Asciimation created by <a href=http://www.asciimation.co.nz/ target=_blank>www.asciimation.co.nz</a>",
@@ -2049,7 +2049,7 @@ system42("apps", function(le) {
             icon: "apps/defrag.png",
             exec: function() {
                 $window.call(this, {
-                    url: "/electron9x/c/programs/defrag/index.php",
+                    url: "c/programs/defrag/index.php",
                     width: 640,
                     height: 495,
                     resizable: false,
@@ -2078,7 +2078,7 @@ system42("apps", function(le) {
             icon: "apps/gameOfLife.png",
             exec: function() {
                 $window.call(this, {
-                    url: "/electron9x/c/programs/gameOfLife/index.html",
+                    url: "c/programs/gameOfLife/index.html",
                     width: 600,
                     height: 600,
                     resizable: false,
@@ -2093,7 +2093,7 @@ system42("apps", function(le) {
             icon: "apps/matrix.png",
             exec: function() {
                 $window.call(this, {
-                    url: "/electron9x/c/programs/matrix/index.php",
+                    url: "c/programs/matrix/index.php",
                     width: 600,
                     height: 300,
                 });
@@ -2106,7 +2106,7 @@ system42("apps", function(le) {
             icon: "apps/dangerous.png",
             exec: function() {
                 $window.call(this, {
-                    url: "/electron9x/c/programs/dangerous/index.html",
+                    url: "c/programs/dangerous/index.html",
                     width: 500,
                     height: 440,
                     footer: "&nbsp;",
@@ -2122,7 +2122,7 @@ system42("apps", function(le) {
             icon: "apps/voice.png",
             exec: function() {
                 $window.call(this, {
-                    url: "/electron9x/c/programs/speech/index.php",
+                    url: "c/programs/speech/index.php",
                     width: 200,
                     height: 420,
                     help: "Chrome only :(",
@@ -2138,7 +2138,7 @@ system42("apps", function(le) {
             icon: "/c/programs/hampsterDance/icon.gif",
             exec: function() {
                 var data = {
-                    url: "/electron9x/c/programs/hampsterDance/index.html",
+                    url: "c/programs/hampsterDance/index.html",
                     icon: "/c/programs/castleGafa/icon.gif",
                     bodyClass: "skin_inset_deep skin_light",
                     width: 485,
