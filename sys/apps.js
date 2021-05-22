@@ -21,7 +21,7 @@ system42("apps", function(le) {
             hascli: true,
             exec: function() {
                 $confirm(
-                    "Are you sure to reinstall Windows93, you will loose all your saved data (trust me...)",
+                    "Are you sure to reinstall Windows9X, you will loose all your saved data (trust me...)",
                     function(ok) {
                         if (ok) {
                             $file.format(function() {
