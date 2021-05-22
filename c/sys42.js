@@ -5266,7 +5266,7 @@ function(e) {
         return n.type = "button", n.className = "block left mr10 h50p w50p", n.style.backgroundRepeat = "no-repeat", n.style.backgroundPosition = "center", n.style.backgroundSize = "32px 32px", i.input.value || (i.input.value = "/c/sys/skins/w93/shortcut.png"), i.input.value = $fs.utils.normalizeIcon(i.input.value), o(), n.onclick = function(e) {
             e.preventDefault(), setTimeout(function() {
                 $explorer($extend({
-                    path: "/c/files/images/icons/",
+                    path: "electron9x/c/files/images/icons/",
                     accept: "image/*",
                     browse: !0,
                     onclose: function(e, t) {
@@ -5277,9 +5277,9 @@ function(e) {
         }, setTimeout(function() {
             var e = i.input.form;
             t && t.watch && e[t.watch] && (e[t.watch].addEventListener("change", function(e) {
-                if ("/c/sys/skins/w93/shortcut.png" === i.input.value) {
+                if ("electron9x/c/sys/skins/w93/shortcut.png" === i.input.value) {
                     var t, n = (this.value || "").split(" ")[0];
-                    (t = le._apps[n] && le._apps[n].icon ? le._apps[n].icon : $fs.utils.getIcon(this.value)) && "/c/sys/skins/w93/file.png" !== t && (i.input.value = t, o())
+                    (t = le._apps[n] && le._apps[n].icon ? le._apps[n].icon : $fs.utils.getIcon(this.value)) && "electron9x/c/sys/skins/w93/file.png" !== t && (i.input.value = t, o())
                 }
             }, !1), $el(e[t.watch]).trigger("change")), e.insertBefore(n, e.firstChild)
         }, 0), i.div.classList.add("hide"), i
@@ -7662,7 +7662,7 @@ system42("explorer", function(D) {
                     var n = u.cloneNode(!1),
                         t = d.cloneNode(!1),
                         i = $fs.utils.getInfo(e);
-                    i.exe = l + e, i.path = l + e, i.title = e, /\/c\/files\/images\/icons\/|\/c\/sys\/skins\//.test(l) && /^image\//.test(i.mime) && (r = !0), $io.obj.all(i, function(e, t) {
+                    i.exe = l + e, i.path = l + e, i.title = e, /\/electron9x\/c\/files\/images\/icons\/|\/c\/sys\/skins\//.test(l) && /^image\//.test(i.mime) && (r = !0), $io.obj.all(i, function(e, t) {
                         n.setAttribute("data-" + t, e)
                     }), n.setAttribute("data-name", e), t.textContent = e, n.className = "ui_icon ui_icon__file", n.appendChild(p(r ? l + e : i.icon)), n.appendChild(t), c.appendChild(n)
                 }), $io.arr.all(n, function(e) {
