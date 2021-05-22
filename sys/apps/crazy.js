@@ -4,9 +4,9 @@ system42.on("apps:ready", function(le) {
   le._apps["crazy"] = {
     categories: "Amusement",
     name: "Crazy Error",
-    icon: "/c/sys/skins/w93/error.png",
+    icon: "/electron9x/c/sys/skins/w93/error.png",
     exec: function(url, opt) {
-      $loader(["/c/libs/MIDIFile/dist/MIDIFile.js"], function() {
+      $loader(["/electron9x/c/libs/MIDIFile/dist/MIDIFile.js"], function() {
         var cont = le._dom.desktop;
         ////////////////////////////////////////////////
         var styleTopppp =
@@ -35,12 +35,12 @@ system42.on("apps:ready", function(le) {
           "#CE_BSOD{" +
           styleTopppp +
           "  background-color: #0102AC;" +
-          '  background-image: url("/c/programs/crazyError/BSoD.png");' +
+          '  background-image: url("/electron9x/c/programs/crazyError/BSoD.png");' +
           "}#CE_LOGIN{" +
           styleTopppp +
           "  background-color: #000;" +
           "  background-size: initial;" +
-          '  background-image: url("/c/sys/img/logow.png");' +
+          '  background-image: url("/electron9x/c/sys/img/logow.png");' +
           "}";
 
         cont.appendChild(styles);
@@ -50,16 +50,16 @@ system42.on("apps:ready", function(le) {
         // console.log(cont.offsetWidth)
 
         var folders = [
-          "/c/",
-          "/c/sys/cursors/",
-          "/c/files/images/icons/",
-          "/c/sys/skins/w93/",
-          "/c/sys/skins/w93/16/",
-          "/c/sys/skins/w93/ext/",
-          "/c/libs/",
+          "/electron9x/c/",
+          "/electron9x/c/sys/cursors/",
+          "/electron9x/c/files/images/icons/",
+          "/electron9x/c/sys/skins/w93/",
+          "/electron9x/c/sys/skins/w93/16/",
+          "/electron9x/c/sys/skins/w93/ext/",
+          "/electron9x/c/libs/",
           "/a/",
-          "/c/sys/fonts/C64_TrueType_v1.2-STYLE/",
-          "/c/files/music/modules/ACID/",
+          "/electron9x/c/sys/fonts/C64_TrueType_v1.2-STYLE/",
+          "/electron9x/c/files/music/modules/ACID/",
         ];
 
         var sequences;
@@ -181,7 +181,7 @@ system42.on("apps:ready", function(le) {
                     "2000 or XP. This setup program and its associated drivers are " +
                     "designed to run only on Windows 2000 or XP. The installation will " +
                     "be terminated.",
-                  img: "/c/sys/skins/w93/error.png",
+                  img: "/electron9x/c/sys/skins/w93/error.png",
                   // ,bodyClass: 'ui_alert--crazy'
                   center: false,
                   sound: null,
@@ -201,7 +201,7 @@ system42.on("apps:ready", function(le) {
                 {
                   title: "TADAAAA",
                   msg: "タスクが正常に失敗しました",
-                  img: "/c/sys/skins/w93/trophy.gif",
+                  img: "/electron9x/c/sys/skins/w93/trophy.gif",
                   btnOk: "ワオ",
                   sound: null,
                   center: true,
@@ -219,7 +219,7 @@ system42.on("apps:ready", function(le) {
                 {
                   title: "エラー",
                   msg: "タスクが正常に失敗しました",
-                  img: "/c/sys/skins/w93/alert.png",
+                  img: "/electron9x/c/sys/skins/w93/alert.png",
                   btnOk: "ワオ",
                   sound: null,
                   center: false,
@@ -236,7 +236,7 @@ system42.on("apps:ready", function(le) {
                 {
                   title: "エラー",
                   msg: "タスクが正常に失敗しました",
-                  img: "/c/sys/skins/w93/info.png",
+                  img: "/electron9x/c/sys/skins/w93/info.png",
                   btnOk: "ワオ",
                   sound: null,
                   center: false,
@@ -263,7 +263,7 @@ system42.on("apps:ready", function(le) {
                 {
                   title: "エラー",
                   msg: "タスクが正常に失敗しました",
-                  img: "/c/sys/skins/w93/error.png",
+                  img: "/electron9x/c/sys/skins/w93/error.png",
                   btnOk: "ワオ",
                   sound: null,
                   center: false,
@@ -280,7 +280,7 @@ system42.on("apps:ready", function(le) {
                 {
                   title: "POUM",
                   msg: "タスクが正常に失敗しました",
-                  img: "/c/files/images/icons/no.png",
+                  img: "/electron9x/c/files/images/icons/no.png",
                   btnOk: "ワオ",
                   sound: null,
                   center: false,
@@ -298,7 +298,7 @@ system42.on("apps:ready", function(le) {
                 {
                   title: "TCHAK",
                   msg: '何か問題でも "C:\\Program Files" 笑',
-                  img: "/c/sys/skins/w93/install.png",
+                  img: "/electron9x/c/sys/skins/w93/install.png",
                   btnOk: "いいえ",
                   btnCancel: "うん",
                   sound: null,
@@ -317,7 +317,7 @@ system42.on("apps:ready", function(le) {
                   title: "ウィンドウ",
                   msg:
                     "曖昧さ回避 この項目では、コンピュータのウィンドウシステムにおけるウィンドウについて説明しています。一般的な「窓」については「窓」をご覧ください。フロー制御におけるウィンドウについては「スライディングウィンドウ」をご覧ください。シャープの液晶テレビのブランド名称については「ウィンドウ (シャープの製品)」をご覧ください。芸能事務所については「ウィンドー (芸能プロダクション)」をご覧ください。PEARLのアルバムについては「WINDOW」をご覧ください。",
-                  img: "/c/files/images/icons/lol.png",
+                  img: "/electron9x/c/files/images/icons/lol.png",
                   btnOk: "いいえ",
                   btnCancel: "うん",
                   sound: null,
@@ -335,7 +335,7 @@ system42.on("apps:ready", function(le) {
                 {
                   title: "エラー",
                   msg: '何か問題でも "C:\\Program Files" 笑',
-                  img: "/c/files/images/icons/yea.png",
+                  img: "/electron9x/c/files/images/icons/yea.png",
                   btnOk: "いいえ",
                   btnCancel: "うん",
                   // ,baseClass: 'fx_spin ui_alert'
@@ -368,7 +368,7 @@ system42.on("apps:ready", function(le) {
                 {
                   title: "エラー",
                   msg: '何か問題でも "C:\\Program Files" 笑',
-                  img: "/c/sys/skins/w93/floppy-format.png",
+                  img: "/electron9x/c/sys/skins/w93/floppy-format.png",
                   btnOk: "いいえ",
                   btnCancel: "うん",
                   sound: null,
@@ -386,7 +386,7 @@ system42.on("apps:ready", function(le) {
                 {
                   title: "あまりにも多くのエラー笑",
                   msg: "Windowsエクスプローラが動作を停止しました",
-                  img: "/c/sys/skins/w93/alert.png",
+                  img: "/electron9x/c/sys/skins/w93/alert.png",
                   btnOk: "いいえ",
                   btnCancel: "うん",
                   center: false,
@@ -406,7 +406,7 @@ system42.on("apps:ready", function(le) {
                 {
                   title: "あまりにも多くのエラー笑",
                   msg: "Windowsエクスプローラが動作を停止しました",
-                  img: "/c/sys/skins/w93/question.png",
+                  img: "/electron9x/c/sys/skins/w93/question.png",
                   btnOk: "いいえ",
                   btnCancel: "うん",
                   center: false,
@@ -426,7 +426,7 @@ system42.on("apps:ready", function(le) {
                   title: "エラー",
                   msg:
                     '曖昧さ回避 "C:\\WINDOWS" 私は何を入力しているのか分かりません',
-                  img: "/c/sys/skins/w93/error.png",
+                  img: "/electron9x/c/sys/skins/w93/error.png",
                   center: false,
                   sound: null,
                 },
@@ -454,7 +454,7 @@ system42.on("apps:ready", function(le) {
                   title: "エラー",
                   msg:
                     '曖昧さ回避 "C:\\WINDOWS" 私は何を入力しているのか分かりません',
-                  img: "/c/files/images/icons/derp.png",
+                  img: "/electron9x/c/files/images/icons/derp.png",
                   btnOk: "OK",
                   center: false,
                   sound: null,
@@ -488,7 +488,7 @@ system42.on("apps:ready", function(le) {
                   title: "Error",
                   msg:
                     "Windows has detected that your monitor<br>is not plugined in.",
-                  img: "/c/sys/skins/w93/settings.png",
+                  img: "/electron9x/c/sys/skins/w93/settings.png",
                   btnOk: "wat",
                   center: false,
                   sound: null,
@@ -515,13 +515,13 @@ system42.on("apps:ready", function(le) {
         }
 
         var all = [
-          fetch("/c/programs/crazyError/CRAZY-ERROR-170BPM.mid", {
+          fetch("/electron9x/c/programs/crazyError/CRAZY-ERROR-170BPM.mid", {
             credentials: "include",
           }),
           new Promise(function(resolve, reject) {
             var sound = new Howl({
               buffer: true,
-              urls: ["/c/programs/crazyError/CRAZY-ERROR-170BPM.wav"],
+              urls: ["/electron9x/c/programs/crazyError/CRAZY-ERROR-170BPM.wav"],
               onload: function() {
                 resolve(sound);
               },
@@ -530,7 +530,7 @@ system42.on("apps:ready", function(le) {
         ];
 
         for (var i = 24; i < 42; i++) {
-          all.push(loadSound("/c/programs/crazyError/SOUNDS/" + i + ".mp3"));
+          all.push(loadSound("/electron9x/c/programs/crazyError/SOUNDS/" + i + ".mp3"));
         }
 
         Promise.all(all).then(function(assets) {
