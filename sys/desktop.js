@@ -2,7 +2,7 @@ system42("desktop", function(le) {
   "use strict";
   le._temp.defaultDesk = [
     {
-      name: "WINDOWS 93.lnk42",
+      name: "WINDOWS 9X.lnk42",
       exe: "/",
       row: 0,
       col: 0,
