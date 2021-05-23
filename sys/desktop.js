@@ -386,5 +386,6 @@ system42("desktop", function(le) {
       icon: "/electron9x/c/sys/skins/w93/error.png",
       row: 8,
       col: 4,
+    },
   ];
 });
