@@ -631,7 +631,7 @@ system42("apps", function(le) {
                     songs = [];
                     $io.obj.each(le._files.c.files.music.modules, function(obj, folder) {
                         $io.obj.each(obj, function(_, file) {
-                            songs.push("/c/files/music/modules/" + folder + "/" + file);
+                            songs.push("c/files/music/modules/" + folder + "/" + file);
                         });
                     });
                     $io.arr.shuffle(songs);
@@ -640,7 +640,7 @@ system42("apps", function(le) {
                 $window.call(this, {
                     width: 293,
                     height: 422,
-                    url: "/c/programs/bananamp/index.php",
+                    url: "c/programs/bananamp/index.php",
                     onready: function() {
                         var that = this;
                         that.el.iframe.contentWindow.le = le;
@@ -681,7 +681,7 @@ system42("apps", function(le) {
                     title: "3d - " + txt,
                     automaximize: true,
                     baseClass: "ui_desktop_layer ui_layer_3d",
-                    url: "/c/programs/3d/index.html",
+                    url: "c/programs/3d/index.html",
                     onready: function() {
                         var that = this;
                         that.el.iframe.contentWindow.setup(txt, color);
@@ -721,7 +721,7 @@ system42("apps", function(le) {
                         "<p><strong>Copyright © 2014 Frederik De Bleser</strong>" +
                         '<br><a target="_blank" href=https://raw.githubusercontent.com/nodebox/opentype.js/master/LICENSE">MIT License</p>' +
                         '<p><a target="_blank" href="http://nodebox.github.io/opentype.js/">http://nodebox.github.io/opentype.js/</a></p>',
-                    url: "/c/programs/opentype/index.php?path=" + url,
+                    url: "c/programs/opentype/index.php?path=" + url,
                 });
             },
         },
@@ -741,7 +741,7 @@ system42("apps", function(le) {
 
                 if (!url) {
                     $log("Usage: img PATH");
-                    $log("e.g. : img /c/files/images/emoticons/smiley-char023.gif");
+                    $log("e.g. : img c/files/images/emoticons/smiley-char023.gif");
                     return;
                 }
 
